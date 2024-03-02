@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textAlignment="textEnd"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/tvJumlahbayar"
+        android:hint="jumlah bayar"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvTotalPopup"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvDiskonPopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_gravity="center"/>
+
+    <EditText
+
+        android:id="@+id/etTiket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="tiket yang di pesan"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/btnSetujui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="setujui"
+        android:textColor="@color/white"/>
+
+
+    <RadioGroup
+        android:id="@+id/rgFilm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbAzazil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Azazil: 25000"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <RadioButton
+            android:id="@+id/rbCin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cin Kuyusu: 20000"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <RadioButton
+            android:id="@+id/rbTuyul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuyul: 15000"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Member"
+        android:layout_gravity="center"
+        android:textSize="30dp"/>
+    <RadioGroup
+        android:id="@+id/rgMember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/rbVvip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vvip"
+            android:textStyle="italic"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rbBaru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baru"
+            android:textStyle="italic"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rbNone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="None"
+            android:textStyle="italic"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgBtn"
+            android:layout_width="10dp"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:src="@drawable/azazil"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="8dp"/>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:src="@drawable/cin"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="8dp"/>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:src="@drawable/tuyul"
+            android:scaleType="fitCenter"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
